@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MathPrimality-iOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>MathPrimality-tvOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>MathPrimalityPerformanceTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>OptimusPrime.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9F03514B232B6F7700D94D0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F035154232B6F7700D94D0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F07623F232F9A2800B20563</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F17D2B0232FCC7E000D71B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F17D2C1232FCCFE000D71B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F805690232BFB9000630BD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

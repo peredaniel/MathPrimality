@@ -1,0 +1,1035 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F035156232B6F7700D94D0B /* MathPrimality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F03514C232B6F7700D94D0B /* MathPrimality.framework */; };
+		9F03515D232B6F7700D94D0B /* MathPrimality.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F03514F232B6F7700D94D0B /* MathPrimality.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F07621A232F743B00B20563 /* EratosthenesSieve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F076219232F743B00B20563 /* EratosthenesSieve.swift */; };
+		9F07621C232F74D800B20563 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07621B232F74D800B20563 /* PriorityQueue.swift */; };
+		9F076220232F7B0000B20563 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07621F232F7B0000B20563 /* Heap.swift */; };
+		9F076222232F7BC600B20563 /* EratosthenesSieveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F076221232F7BC600B20563 /* EratosthenesSieveTests.swift */; };
+		9F076225232F7BFC00B20563 /* MathPrimality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F03514C232B6F7700D94D0B /* MathPrimality.framework */; };
+		9F076227232F850D00B20563 /* ListNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F076226232F850D00B20563 /* ListNumbers.swift */; };
+		9F07622C232F8E1800B20563 /* Primes_0_100000.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F07622B232F8E1800B20563 /* Primes_0_100000.json */; };
+		9F076245232F9A2800B20563 /* MathPrimality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F03514C232B6F7700D94D0B /* MathPrimality.framework */; };
+		9F07624B232F9A3800B20563 /* ListNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F076226232F850D00B20563 /* ListNumbers.swift */; };
+		9F07624C232F9A3B00B20563 /* Primes_0_100000.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F07622B232F8E1800B20563 /* Primes_0_100000.json */; };
+		9F076251232FB0F700B20563 /* EratosthenesSievePerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F076250232FB0F700B20563 /* EratosthenesSievePerformanceTests.swift */; };
+		9F076254232FB12700B20563 /* FermatPrimalityTestPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F076253232FB12700B20563 /* FermatPrimalityTestPerformanceTests.swift */; };
+		9F076256232FB16700B20563 /* MillerRabinPrimalityTestPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F076255232FB16700B20563 /* MillerRabinPrimalityTestPerformanceTests.swift */; };
+		9F17D2B2232FCC7E000D71B9 /* MathPrimality.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F03514F232B6F7700D94D0B /* MathPrimality.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F17D2B4232FCC7E000D71B9 /* FermatPrimalityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F805683232BF77200630BD4 /* FermatPrimalityTest.swift */; };
+		9F17D2B5232FCC7E000D71B9 /* PrimalityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F805686232BF7AF00630BD4 /* PrimalityTest.swift */; };
+		9F17D2B6232FCC7E000D71B9 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07621B232F74D800B20563 /* PriorityQueue.swift */; };
+		9F17D2B7232FCC7E000D71B9 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07621F232F7B0000B20563 /* Heap.swift */; };
+		9F17D2B8232FCC7E000D71B9 /* MillerRabinPrimalityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F805681232BF25700630BD4 /* MillerRabinPrimalityTest.swift */; };
+		9F17D2B9232FCC7E000D71B9 /* EratosthenesSieve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F076219232F743B00B20563 /* EratosthenesSieve.swift */; };
+		9F805682232BF25700630BD4 /* MillerRabinPrimalityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F805681232BF25700630BD4 /* MillerRabinPrimalityTest.swift */; };
+		9F805684232BF77200630BD4 /* FermatPrimalityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F805683232BF77200630BD4 /* FermatPrimalityTest.swift */; };
+		9F805687232BF7AF00630BD4 /* PrimalityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F805686232BF7AF00630BD4 /* PrimalityTest.swift */; };
+		9F80568A232BF9F800630BD4 /* FermatPrimalityTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F805689232BF9F800630BD4 /* FermatPrimalityTestTests.swift */; };
+		9F80568C232BFB5500630BD4 /* MillerRabinPrimalityTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F80568B232BFB5500630BD4 /* MillerRabinPrimalityTestTests.swift */; };
+		9F8056A4232BFBC400630BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8056A3232BFBC400630BD4 /* Assets.xcassets */; };
+		9F8056A7232BFBD100630BD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8056A5232BFBD000630BD4 /* LaunchScreen.storyboard */; };
+		9F8056A8232BFBD100630BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8056A6232BFBD100630BD4 /* Main.storyboard */; };
+		9F8056B4232BFBDC00630BD4 /* UIButton+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8056AA232BFBDB00630BD4 /* UIButton+Gradient.swift */; };
+		9F8056B6232BFBDC00630BD4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8056AD232BFBDB00630BD4 /* MainViewController.swift */; };
+		9F8056B7232BFBDC00630BD4 /* PrimeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8056AF232BFBDC00630BD4 /* PrimeListViewModel.swift */; };
+		9F8056B8232BFBDC00630BD4 /* PrimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8056B0232BFBDC00630BD4 /* PrimeListViewController.swift */; };
+		9F8056B9232BFBDC00630BD4 /* SinglePrimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8056B2232BFBDC00630BD4 /* SinglePrimeViewController.swift */; };
+		9F8056BA232BFBDC00630BD4 /* SinglePrimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8056B3232BFBDC00630BD4 /* SinglePrimeViewModel.swift */; };
+		9F8056BC232BFBE300630BD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8056BB232BFBE300630BD4 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F035157232B6F7700D94D0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F035143232B6F7700D94D0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F03514B232B6F7700D94D0B;
+			remoteInfo = MathPrimality;
+		};
+		9F076246232F9A2800B20563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F035143232B6F7700D94D0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F03514B232B6F7700D94D0B;
+			remoteInfo = MathPrimality;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F03514C232B6F7700D94D0B /* MathPrimality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MathPrimality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F03514F232B6F7700D94D0B /* MathPrimality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathPrimality.h; sourceTree = "<group>"; };
+		9F035150232B6F7700D94D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F035155232B6F7700D94D0B /* MathPrimalityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathPrimalityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F03515C232B6F7700D94D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F076219232F743B00B20563 /* EratosthenesSieve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EratosthenesSieve.swift; sourceTree = "<group>"; };
+		9F07621B232F74D800B20563 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		9F07621F232F7B0000B20563 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		9F076221232F7BC600B20563 /* EratosthenesSieveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EratosthenesSieveTests.swift; sourceTree = "<group>"; };
+		9F076226232F850D00B20563 /* ListNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNumbers.swift; sourceTree = "<group>"; };
+		9F07622B232F8E1800B20563 /* Primes_0_100000.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Primes_0_100000.json; sourceTree = "<group>"; };
+		9F076240232F9A2800B20563 /* MathPrimalityPerformanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathPrimalityPerformanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F076244232F9A2800B20563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F076250232FB0F700B20563 /* EratosthenesSievePerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EratosthenesSievePerformanceTests.swift; sourceTree = "<group>"; };
+		9F076253232FB12700B20563 /* FermatPrimalityTestPerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FermatPrimalityTestPerformanceTests.swift; sourceTree = "<group>"; };
+		9F076255232FB16700B20563 /* MillerRabinPrimalityTestPerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillerRabinPrimalityTestPerformanceTests.swift; sourceTree = "<group>"; };
+		9F17D2BF232FCC7E000D71B9 /* MathPrimality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MathPrimality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F805681232BF25700630BD4 /* MillerRabinPrimalityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillerRabinPrimalityTest.swift; sourceTree = "<group>"; };
+		9F805683232BF77200630BD4 /* FermatPrimalityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FermatPrimalityTest.swift; sourceTree = "<group>"; };
+		9F805686232BF7AF00630BD4 /* PrimalityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimalityTest.swift; sourceTree = "<group>"; };
+		9F805689232BF9F800630BD4 /* FermatPrimalityTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FermatPrimalityTestTests.swift; sourceTree = "<group>"; };
+		9F80568B232BFB5500630BD4 /* MillerRabinPrimalityTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillerRabinPrimalityTestTests.swift; sourceTree = "<group>"; };
+		9F805691232BFB9000630BD4 /* OptimusPrime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OptimusPrime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F80569F232BFB9300630BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F8056A3232BFBC400630BD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F8056A5232BFBD000630BD4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F8056A6232BFBD100630BD4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9F8056AA232BFBDB00630BD4 /* UIButton+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Gradient.swift"; sourceTree = "<group>"; };
+		9F8056AD232BFBDB00630BD4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9F8056AF232BFBDC00630BD4 /* PrimeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeListViewModel.swift; sourceTree = "<group>"; };
+		9F8056B0232BFBDC00630BD4 /* PrimeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeListViewController.swift; sourceTree = "<group>"; };
+		9F8056B2232BFBDC00630BD4 /* SinglePrimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePrimeViewController.swift; sourceTree = "<group>"; };
+		9F8056B3232BFBDC00630BD4 /* SinglePrimeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePrimeViewModel.swift; sourceTree = "<group>"; };
+		9F8056BB232BFBE300630BD4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F035149232B6F7700D94D0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F035152232B6F7700D94D0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F035156232B6F7700D94D0B /* MathPrimality.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F07623D232F9A2800B20563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F076245232F9A2800B20563 /* MathPrimality.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F17D2BA232FCC7E000D71B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F80568E232BFB9000630BD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F076225232F7BFC00B20563 /* MathPrimality.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F035142232B6F7700D94D0B = {
+			isa = PBXGroup;
+			children = (
+				9F03514E232B6F7700D94D0B /* MathPrimality */,
+				9F076241232F9A2800B20563 /* MathPrimalityPerformanceTests */,
+				9F035159232B6F7700D94D0B /* MathPrimalityTests */,
+				9F076223232F7BE100B20563 /* MathPrimalityTestsHelpers */,
+				9F805692232BFB9100630BD4 /* OptimusPrime */,
+				9F03514D232B6F7700D94D0B /* Products */,
+				9F076224232F7BFC00B20563 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F03514D232B6F7700D94D0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F03514C232B6F7700D94D0B /* MathPrimality.framework */,
+				9F035155232B6F7700D94D0B /* MathPrimalityTests.xctest */,
+				9F805691232BFB9000630BD4 /* OptimusPrime.app */,
+				9F076240232F9A2800B20563 /* MathPrimalityPerformanceTests.xctest */,
+				9F17D2BF232FCC7E000D71B9 /* MathPrimality.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F03514E232B6F7700D94D0B /* MathPrimality */ = {
+			isa = PBXGroup;
+			children = (
+				9F805680232BF23B00630BD4 /* Source */,
+				9F03514F232B6F7700D94D0B /* MathPrimality.h */,
+				9F035150232B6F7700D94D0B /* Info.plist */,
+			);
+			path = MathPrimality;
+			sourceTree = "<group>";
+		};
+		9F035159232B6F7700D94D0B /* MathPrimalityTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F07621E232F7A0B00B20563 /* SievesTests */,
+				9F805688232BF9CE00630BD4 /* PrimalityTestsTests */,
+				9F03515C232B6F7700D94D0B /* Info.plist */,
+			);
+			path = MathPrimalityTests;
+			sourceTree = "<group>";
+		};
+		9F076218232F73FF00B20563 /* Sieves */ = {
+			isa = PBXGroup;
+			children = (
+				9F076219232F743B00B20563 /* EratosthenesSieve.swift */,
+			);
+			path = Sieves;
+			sourceTree = "<group>";
+		};
+		9F07621D232F755300B20563 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F07621F232F7B0000B20563 /* Heap.swift */,
+				9F07621B232F74D800B20563 /* PriorityQueue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F07621E232F7A0B00B20563 /* SievesTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F076221232F7BC600B20563 /* EratosthenesSieveTests.swift */,
+			);
+			path = SievesTests;
+			sourceTree = "<group>";
+		};
+		9F076223232F7BE100B20563 /* MathPrimalityTestsHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F07622B232F8E1800B20563 /* Primes_0_100000.json */,
+				9F076226232F850D00B20563 /* ListNumbers.swift */,
+			);
+			path = MathPrimalityTestsHelpers;
+			sourceTree = "<group>";
+		};
+		9F076224232F7BFC00B20563 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F076241232F9A2800B20563 /* MathPrimalityPerformanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F076252232FB0FD00B20563 /* PrimalityTests */,
+				9F07624F232FB0E000B20563 /* Sieves */,
+				9F076244232F9A2800B20563 /* Info.plist */,
+			);
+			path = MathPrimalityPerformanceTests;
+			sourceTree = "<group>";
+		};
+		9F07624D232F9EC000B20563 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9F8056AE232BFBDC00630BD4 /* PrimeList */,
+				9F8056AB232BFBDB00630BD4 /* Main */,
+				9F8056B1232BFBDC00630BD4 /* SinglePrime */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9F07624E232F9ECC00B20563 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9F8056A5232BFBD000630BD4 /* LaunchScreen.storyboard */,
+				9F8056A6232BFBD100630BD4 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9F07624F232FB0E000B20563 /* Sieves */ = {
+			isa = PBXGroup;
+			children = (
+				9F076250232FB0F700B20563 /* EratosthenesSievePerformanceTests.swift */,
+			);
+			path = Sieves;
+			sourceTree = "<group>";
+		};
+		9F076252232FB0FD00B20563 /* PrimalityTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F076253232FB12700B20563 /* FermatPrimalityTestPerformanceTests.swift */,
+				9F076255232FB16700B20563 /* MillerRabinPrimalityTestPerformanceTests.swift */,
+			);
+			path = PrimalityTests;
+			sourceTree = "<group>";
+		};
+		9F805680232BF23B00630BD4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9F07621D232F755300B20563 /* Models */,
+				9F805685232BF79800630BD4 /* PrimalityTests */,
+				9F076218232F73FF00B20563 /* Sieves */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9F805685232BF79800630BD4 /* PrimalityTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F805683232BF77200630BD4 /* FermatPrimalityTest.swift */,
+				9F805681232BF25700630BD4 /* MillerRabinPrimalityTest.swift */,
+				9F805686232BF7AF00630BD4 /* PrimalityTest.swift */,
+			);
+			path = PrimalityTests;
+			sourceTree = "<group>";
+		};
+		9F805688232BF9CE00630BD4 /* PrimalityTestsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F805689232BF9F800630BD4 /* FermatPrimalityTestTests.swift */,
+				9F80568B232BFB5500630BD4 /* MillerRabinPrimalityTestTests.swift */,
+			);
+			path = PrimalityTestsTests;
+			sourceTree = "<group>";
+		};
+		9F805692232BFB9100630BD4 /* OptimusPrime */ = {
+			isa = PBXGroup;
+			children = (
+				9F8056BB232BFBE300630BD4 /* AppDelegate.swift */,
+				9F8056A9232BFBDB00630BD4 /* Extensions */,
+				9F07624D232F9EC000B20563 /* Screens */,
+				9F07624E232F9ECC00B20563 /* Storyboards */,
+				9F8056A3232BFBC400630BD4 /* Assets.xcassets */,
+				9F80569F232BFB9300630BD4 /* Info.plist */,
+			);
+			path = OptimusPrime;
+			sourceTree = "<group>";
+		};
+		9F8056A9232BFBDB00630BD4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F8056AA232BFBDB00630BD4 /* UIButton+Gradient.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9F8056AB232BFBDB00630BD4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9F8056AD232BFBDB00630BD4 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9F8056AE232BFBDC00630BD4 /* PrimeList */ = {
+			isa = PBXGroup;
+			children = (
+				9F8056B0232BFBDC00630BD4 /* PrimeListViewController.swift */,
+				9F8056AF232BFBDC00630BD4 /* PrimeListViewModel.swift */,
+			);
+			path = PrimeList;
+			sourceTree = "<group>";
+		};
+		9F8056B1232BFBDC00630BD4 /* SinglePrime */ = {
+			isa = PBXGroup;
+			children = (
+				9F8056B2232BFBDC00630BD4 /* SinglePrimeViewController.swift */,
+				9F8056B3232BFBDC00630BD4 /* SinglePrimeViewModel.swift */,
+			);
+			path = SinglePrime;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9F035147232B6F7700D94D0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F03515D232B6F7700D94D0B /* MathPrimality.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F17D2B1232FCC7E000D71B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F17D2B2232FCC7E000D71B9 /* MathPrimality.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9F03514B232B6F7700D94D0B /* MathPrimality-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F035160232B6F7700D94D0B /* Build configuration list for PBXNativeTarget "MathPrimality-iOS" */;
+			buildPhases = (
+				9F035147232B6F7700D94D0B /* Headers */,
+				9F035148232B6F7700D94D0B /* Sources */,
+				9F035149232B6F7700D94D0B /* Frameworks */,
+				9F03514A232B6F7700D94D0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MathPrimality-iOS";
+			productName = MathPrimality;
+			productReference = 9F03514C232B6F7700D94D0B /* MathPrimality.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F035154232B6F7700D94D0B /* MathPrimalityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F035163232B6F7700D94D0B /* Build configuration list for PBXNativeTarget "MathPrimalityTests" */;
+			buildPhases = (
+				9F035151232B6F7700D94D0B /* Sources */,
+				9F035152232B6F7700D94D0B /* Frameworks */,
+				9F035153232B6F7700D94D0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F035158232B6F7700D94D0B /* PBXTargetDependency */,
+			);
+			name = MathPrimalityTests;
+			productName = MathPrimalityTests;
+			productReference = 9F035155232B6F7700D94D0B /* MathPrimalityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F07623F232F9A2800B20563 /* MathPrimalityPerformanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F076248232F9A2800B20563 /* Build configuration list for PBXNativeTarget "MathPrimalityPerformanceTests" */;
+			buildPhases = (
+				9F07623C232F9A2800B20563 /* Sources */,
+				9F07623D232F9A2800B20563 /* Frameworks */,
+				9F07623E232F9A2800B20563 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F076247232F9A2800B20563 /* PBXTargetDependency */,
+			);
+			name = MathPrimalityPerformanceTests;
+			productName = MathPrimalityPerformanceTests;
+			productReference = 9F076240232F9A2800B20563 /* MathPrimalityPerformanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F17D2B0232FCC7E000D71B9 /* MathPrimality-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F17D2BC232FCC7E000D71B9 /* Build configuration list for PBXNativeTarget "MathPrimality-tvOS" */;
+			buildPhases = (
+				9F17D2B1232FCC7E000D71B9 /* Headers */,
+				9F17D2B3232FCC7E000D71B9 /* Sources */,
+				9F17D2BA232FCC7E000D71B9 /* Frameworks */,
+				9F17D2BB232FCC7E000D71B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MathPrimality-tvOS";
+			productName = MathPrimality;
+			productReference = 9F17D2BF232FCC7E000D71B9 /* MathPrimality.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F805690232BFB9000630BD4 /* OptimusPrime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F8056A0232BFB9300630BD4 /* Build configuration list for PBXNativeTarget "OptimusPrime" */;
+			buildPhases = (
+				9F80568D232BFB9000630BD4 /* Sources */,
+				9F80568E232BFB9000630BD4 /* Frameworks */,
+				9F80568F232BFB9000630BD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OptimusPrime;
+			productName = OptimusPrime;
+			productReference = 9F805691232BFB9000630BD4 /* OptimusPrime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F035143232B6F7700D94D0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Pedro Daniel Prieto Martínez";
+				TargetAttributes = {
+					9F03514B232B6F7700D94D0B = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					9F035154232B6F7700D94D0B = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					9F07623F232F9A2800B20563 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					9F805690232BFB9000630BD4 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 9F035146232B6F7700D94D0B /* Build configuration list for PBXProject "MathPrimality" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F035142232B6F7700D94D0B;
+			productRefGroup = 9F03514D232B6F7700D94D0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F03514B232B6F7700D94D0B /* MathPrimality-iOS */,
+				9F17D2B0232FCC7E000D71B9 /* MathPrimality-tvOS */,
+				9F07623F232F9A2800B20563 /* MathPrimalityPerformanceTests */,
+				9F035154232B6F7700D94D0B /* MathPrimalityTests */,
+				9F805690232BFB9000630BD4 /* OptimusPrime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F03514A232B6F7700D94D0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F035153232B6F7700D94D0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F07622C232F8E1800B20563 /* Primes_0_100000.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F07623E232F9A2800B20563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F07624C232F9A3B00B20563 /* Primes_0_100000.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F17D2BB232FCC7E000D71B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F80568F232BFB9000630BD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8056A8232BFBD100630BD4 /* Main.storyboard in Resources */,
+				9F8056A4232BFBC400630BD4 /* Assets.xcassets in Resources */,
+				9F8056A7232BFBD100630BD4 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F035148232B6F7700D94D0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F805684232BF77200630BD4 /* FermatPrimalityTest.swift in Sources */,
+				9F805687232BF7AF00630BD4 /* PrimalityTest.swift in Sources */,
+				9F07621C232F74D800B20563 /* PriorityQueue.swift in Sources */,
+				9F076220232F7B0000B20563 /* Heap.swift in Sources */,
+				9F805682232BF25700630BD4 /* MillerRabinPrimalityTest.swift in Sources */,
+				9F07621A232F743B00B20563 /* EratosthenesSieve.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F035151232B6F7700D94D0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F076227232F850D00B20563 /* ListNumbers.swift in Sources */,
+				9F076222232F7BC600B20563 /* EratosthenesSieveTests.swift in Sources */,
+				9F80568A232BF9F800630BD4 /* FermatPrimalityTestTests.swift in Sources */,
+				9F80568C232BFB5500630BD4 /* MillerRabinPrimalityTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F07623C232F9A2800B20563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F076254232FB12700B20563 /* FermatPrimalityTestPerformanceTests.swift in Sources */,
+				9F076251232FB0F700B20563 /* EratosthenesSievePerformanceTests.swift in Sources */,
+				9F076256232FB16700B20563 /* MillerRabinPrimalityTestPerformanceTests.swift in Sources */,
+				9F07624B232F9A3800B20563 /* ListNumbers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F17D2B3232FCC7E000D71B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F17D2B4232FCC7E000D71B9 /* FermatPrimalityTest.swift in Sources */,
+				9F17D2B5232FCC7E000D71B9 /* PrimalityTest.swift in Sources */,
+				9F17D2B6232FCC7E000D71B9 /* PriorityQueue.swift in Sources */,
+				9F17D2B7232FCC7E000D71B9 /* Heap.swift in Sources */,
+				9F17D2B8232FCC7E000D71B9 /* MillerRabinPrimalityTest.swift in Sources */,
+				9F17D2B9232FCC7E000D71B9 /* EratosthenesSieve.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F80568D232BFB9000630BD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8056BC232BFBE300630BD4 /* AppDelegate.swift in Sources */,
+				9F8056BA232BFBDC00630BD4 /* SinglePrimeViewModel.swift in Sources */,
+				9F8056B9232BFBDC00630BD4 /* SinglePrimeViewController.swift in Sources */,
+				9F8056B7232BFBDC00630BD4 /* PrimeListViewModel.swift in Sources */,
+				9F8056B8232BFBDC00630BD4 /* PrimeListViewController.swift in Sources */,
+				9F8056B4232BFBDC00630BD4 /* UIButton+Gradient.swift in Sources */,
+				9F8056B6232BFBDC00630BD4 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F035158232B6F7700D94D0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F03514B232B6F7700D94D0B /* MathPrimality-iOS */;
+			targetProxy = 9F035157232B6F7700D94D0B /* PBXContainerItemProxy */;
+		};
+		9F076247232F9A2800B20563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F03514B232B6F7700D94D0B /* MathPrimality-iOS */;
+			targetProxy = 9F076246232F9A2800B20563 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9F03515E232B6F7700D94D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F03515F232B6F7700D94D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F035161232B6F7700D94D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MathPrimality/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prietomartinez.MathPrimality;
+				PRODUCT_NAME = MathPrimality;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F035162232B6F7700D94D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MathPrimality/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prietomartinez.MathPrimality;
+				PRODUCT_NAME = MathPrimality;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F035164232B6F7700D94D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MathPrimalityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prietomartinez.MathPrimalityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F035165232B6F7700D94D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MathPrimalityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prietomartinez.MathPrimalityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F076249232F9A2800B20563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MathPrimalityPerformanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prietomartinez.MathPrimalityPerformanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F07624A232F9A2800B20563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MathPrimalityPerformanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prietomartinez.MathPrimalityPerformanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F17D2BD232FCC7E000D71B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/MathPrimality/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prietomartinez.MathPrimality;
+				PRODUCT_NAME = MathPrimality;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		9F17D2BE232FCC7E000D71B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/MathPrimality/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prietomartinez.MathPrimality;
+				PRODUCT_NAME = MathPrimality;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		9F8056A1232BFB9300630BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OptimusPrime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prietomartinez.OptimusPrime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2 ";
+			};
+			name = Debug;
+		};
+		9F8056A2232BFB9300630BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OptimusPrime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prietomartinez.OptimusPrime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2 ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F035146232B6F7700D94D0B /* Build configuration list for PBXProject "MathPrimality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F03515E232B6F7700D94D0B /* Debug */,
+				9F03515F232B6F7700D94D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F035160232B6F7700D94D0B /* Build configuration list for PBXNativeTarget "MathPrimality-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F035161232B6F7700D94D0B /* Debug */,
+				9F035162232B6F7700D94D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F035163232B6F7700D94D0B /* Build configuration list for PBXNativeTarget "MathPrimalityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F035164232B6F7700D94D0B /* Debug */,
+				9F035165232B6F7700D94D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F076248232F9A2800B20563 /* Build configuration list for PBXNativeTarget "MathPrimalityPerformanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F076249232F9A2800B20563 /* Debug */,
+				9F07624A232F9A2800B20563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F17D2BC232FCC7E000D71B9 /* Build configuration list for PBXNativeTarget "MathPrimality-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F17D2BD232FCC7E000D71B9 /* Debug */,
+				9F17D2BE232FCC7E000D71B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F8056A0232BFB9300630BD4 /* Build configuration list for PBXNativeTarget "OptimusPrime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F8056A1232BFB9300630BD4 /* Debug */,
+				9F8056A2232BFB9300630BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F035143232B6F7700D94D0B /* Project object */;
+}

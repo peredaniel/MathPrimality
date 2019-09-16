@@ -1,0 +1,62 @@
+default_platform(:ios)
+
+####################################################################################################
+####################################################################################################
+
+##############
+# Test lanes #
+##############
+
+platform :ios do
+	desc "Runs framework's unit tests in the specified device."
+	desc "Usage example: fastlane ios test device:'iPhone 8'"
+	lane :test do |options| 
+		raise "Missing 'device' parameter. Usage: fastlane ios test device:DEVICE" unless options[:device]
+		scan(
+		    scheme: "MathPrimality-iOS",
+		    device: options[:device],
+		    clean: true,
+		    disable_concurrent_testing: true
+  		)
+	end
+
+	lane :test_performance do |options| 
+		raise "Missing 'device' parameter. Usage: fastlane ios test_performance device:DEVICE" unless options[:device]
+		scan(
+		    scheme: "MathPrimalityPerformanceTests",
+		    device: options[:device],
+		    clean: true,
+		    disable_concurrent_testing: true
+  		)
+	end
+end
+
+
+###############
+# Build lanes #
+###############
+
+desc "Builds the framework for the specified platform (either 'iOS' or 'tvOS')."
+desc "This lane is to make sure that all platforms build correctly and there are no breaking changes. No tests are executed."
+desc "Usage example: fastlane build_framework platform:'iOS'"
+lane :build_framework do |options|
+	raise "Missing 'platform' parameter. Usage: fastlane build_framework platform:PLATFORM" unless options[:platform]
+	platform = options[:platform]
+	xcbuild(
+		scheme: "MathPrimality-" + "#{platform}",
+		clean: true
+	)
+end
+
+desc "Builds the example app for the specified iOS version."
+desc "This lane is to make sure that the example app builds correctly and that breaking API changes are detected before deployment."
+desc "Usage example: fastlane build_example_app ios_version:'12.4'"
+lane :build_example_app do |options|
+	raise "Missing 'ios_version' parameter. Usage: fastlane build_example_app ios_version:IOS_VERSION" unless options[:ios_version]
+	ios_version = options[:ios_version]
+	xcbuild(
+		scheme: "OptimusPrime",
+		sdk: "iphonesimulator" + "#{ios_version}",
+		clean: true
+	)
+end
