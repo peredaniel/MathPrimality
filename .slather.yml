@@ -1,0 +1,8 @@
+coverage_service: coveralls
+xcodeproj: MathPrimality.xcodeproj
+scheme: MathPrimality-iOS
+source_directory: MathPrimality/*
+ignore:
+  - MathPrimalityPerformanceTests/*
+  - MathPrimalityTests/*
+  - MathPrimality/Source/Models/*

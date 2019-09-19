@@ -1,7 +1,9 @@
 # MathPrimality framework
 
+[![Build Status](https://travis-ci.com/peredaniel/MathPrimality.svg?branch=master)](https://travis-ci.com/peredaniel/MathPrimality)
+[![Coverage Status](https://coveralls.io/repos/github/peredaniel/MathPrimality/badge.svg?branch=master)](https://coveralls.io/github/peredaniel/MathPrimality?branch=master)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](https://img.shields.io/github/license/peredaniel/MathExpression)](https://github.com/peredaniel/MathExpression/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/peredaniel/MathPrimality)](https://github.com/peredaniel/MathPrimality/blob/master/LICENSE)
 [![Language: Swift 4.2](https://img.shields.io/badge/Swift-4.2-green.svg)](https://swift.org/)
 [![Language: Swift 5.0](https://img.shields.io/badge/Swift-5.0-green.svg)](https://swift.org/)
 
