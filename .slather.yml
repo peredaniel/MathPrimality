@@ -5,3 +5,4 @@ source_directory: MathPrimality/*
 ignore:
   - MathPrimalityPerformanceTests/*
   - MathPrimalityTests/*
+  - MathPrimality/Source/Models/*
