@@ -176,7 +176,7 @@ PLATFORMS
 
 DEPENDENCIES
   fastlane (~> 2.131.0)
-  slather
+  slather (~> 2.4.0)
 
 BUNDLED WITH
    2.0.2
