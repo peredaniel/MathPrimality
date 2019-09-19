@@ -20,7 +20,7 @@ jobs:
   - stage: test
     name: "Running tests"
     script: bundle exec fastlane ios test device:'iPhone 8'
-    after_success: slather
+    after_success: bundle exec slather
 
   - stage: test
     name: "Running performance tests"
