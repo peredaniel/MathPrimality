@@ -22,3 +22,10 @@ jobs:
   - stage: test
     name: "Running performance tests"
     script: bundle exec fastlane ios test_performance device:'iPhone 8'
+
+stages:
+- name: build
+  if: (type = pull_request OR type = push) AND branch = master
+
+- name: test
+  if: (type = pull_request OR type = push) AND branch = master
