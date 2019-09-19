@@ -1,6 +1,8 @@
 language: swift
 osx_image: xcode10.3
 
+cache: bundle
+
 jobs:
   include:
   - stage: build
