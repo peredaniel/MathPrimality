@@ -15,7 +15,7 @@ jobs:
 
   - stage: build
     name: "Building example app"
-    script: bundle exec fastlane build_example_app ios_version:'12.4'
+    script: bundle exec fastlane build_example_app ios_version:'14.5'
 
   - stage: test
     name: "Running tests"
